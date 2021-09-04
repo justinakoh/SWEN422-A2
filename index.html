@@ -1,14 +1,27 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Choropleth Map</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
-    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
-  </head>
-  <body>
-    <svg width="960" height="500"></svg>
-    <script src="bundle.js"></script>
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./style.css">
+        
+        <!-- Load d3.js and the geo projection plugin -->
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+        <title>Chloropleth Map</title>
+        
+        
+        <!-- Create an element where the map will take place -->
+        <!-- <svg id="my_dataviz" width="440" height="300"></svg> -->
+        <!-- <script src="./app.js"></script> -->
+    </head>
+    <body>
+        <svg id='canvas'>
+
+        </svg>
+    </body>
+    <script defer src='script.js'></script>
+    <!-- This should be some bundle thing? -->
+    <!-- <script defer src='script.js'></script> -->
 </html>
